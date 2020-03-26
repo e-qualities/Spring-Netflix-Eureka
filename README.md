@@ -4,6 +4,22 @@ This repository contains samples and configuration guidance for Spring Netflix E
 Especially, it shows how Eureka can be configured to run in a standalone mode, and in a PaaS Offering like Cloud Foundry.
 For further information and samples on Eureka, also visit [Spring-Netflix-Cloud](https://github.com/e-qualities/Spring-Netflix-Cloud).
 
+   * [Components of this Project](#components-of-this-project)
+   * [Running the Project](#running-the-project)
+   * [Running Eureka in Standalone Mode](#running-eureka-in-standalone-mode)
+      * [The Sample Scenario](#the-sample-scenario)
+      * [Running the Sample Scenario](#running-the-sample-scenario)
+      * [How To Achieve This Behavior](#how-to-achieve-this-behavior)
+      * [Complete Configurations](#complete-configurations)
+         * [Eureka Server Configuration](#eureka-server-configuration)
+         * [Eureka Client Configuration](#eureka-client-configuration)
+   * [Deployment to Cloud Foundry](#deployment-to-cloud-foundry)
+   * [Debugging Eureka Behavior](#debugging-eureka-behavior)
+      * [Spring Boot Actuator](#spring-boot-actuator)
+      * [Service Registry Client](#service-registry-client)
+   * [Eureka with Self-Preservation Turned On](#eureka-with-self-preservation-turned-on)
+   * [References](#references)
+
 # Components of this Project
 
 This project consists of the following components:
