@@ -94,7 +94,8 @@ management:
   endpoint:
     refresh.enabled: true        # enable /actuator/refresh endpoint.
     health.show-details: always
----
+
+--- # For Cloud Foundry Deployment
 spring.profiles: cloud
 
 eureka:

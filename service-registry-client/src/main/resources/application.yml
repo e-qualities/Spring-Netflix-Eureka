@@ -35,7 +35,7 @@ management.endpoints.web.exposure.include: "*"
 # See: https://docs.spring.io/spring-boot/docs/2.1.3.RELEASE/reference/htmlsingle/#production-ready-health 
 management.endpoint.health.show-details: always
 
----
+--- # For Cloud Foundry Deployment
 spring.profiles: cloud
 
 server:

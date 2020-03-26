@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Diagnostics</title>
+<title>Service Registry Client</title>
 <base href="/" />
 <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
 <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
@@ -10,22 +10,16 @@
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Service Registry Debugger!</h1>
+    <h1>Welcome to Service Registry Client!</h1>
     <p>
     This service provides an easy way to lookup service information from Eureka.<br/>
     You use it by the following URL: <a href="/lookup/serviceID">/lookup/serviceID</a> where serviceID is the ID of the respective service as declared in Eureka.
     </p>
     <p>
-    For example, the following URLs show information about the respective registered services
+    For example, the following URL shows information about the service registry client instance(s) itself:
     <ol>
-      <li> <a href="/lookup/catalog-maintenance-service">Catalog Maintenance Service</a> </li>
-      <li> <a href="/lookup/user-service">User Service</a> </li>
-      <li> <a href="/lookup/checkout-service">Checkout Service</a> </li>
-      <li> <a href="/lookup/webshop-service">Web Shop Service</a> </li>
-      <li> <a href="/lookup/order-fulfillment-service">Order Fulfillment Service</a> </li>
-      <li> <a href="/lookup/service-registry-debugger">The Service Registry Debugger itself</a> </li>
+      <li> <a href="/lookup/service-registry-client">Service Registry Client</a> </li>
     </ol>
-    You can simply copy and paste these URLs into a hystrix dashboard.
     </p>
   </div>
 </body>
