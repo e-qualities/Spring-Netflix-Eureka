@@ -470,6 +470,7 @@ If you are interested in a scenario with self-preservation turned on, please see
 * [Eureka Server Configurations](https://github.com/Netflix/eureka/blob/master/eureka-core/src/main/java/com/netflix/eureka/EurekaServerConfig.java)
 * [Eureka Server Configuration Default Values](https://github.com/Netflix/eureka/blob/f660f788e8309621186deee6ffe9425ab8243056/eureka-core/src/main/java/com/netflix/eureka/DefaultEurekaServerConfig.java)
 * Lease Expiration: [isLeaseExpirationEnabled](https://github.com/Netflix/eureka/blob/cefadab13ef8ddfa2d702cd07ad9a4a393ff94f4/eureka-core/src/main/java/com/netflix/eureka/registry/PeerAwareInstanceRegistryImpl.java#L474) | [numberOfRenewsPerMinThreshold](https://github.com/Netflix/eureka/blob/master/eureka-core/src/main/java/com/netflix/eureka/registry/AbstractInstanceRegistry.java#L1189)
+* [PeerAwareInstanceRegistryImpl](https://github.com/Netflix/eureka/blob/master/eureka-core/src/main/java/com/netflix/eureka/registry/PeerAwareInstanceRegistryImpl.java)
 
 
 
