@@ -63,8 +63,15 @@ eureka:
     ###################################################################  
     #### These settings are only relevant only for Eureka clients: ####
     ###################################################################
-    #lease-renewal-interval-in-seconds:         2   # Set heartbeat cadence to 2 seconds. Only for local development. In production use default of 30 seconds.
-    #lease-expiration-duration-in-seconds:      5   # Set the lease validity to 5 seconds. If no heartbeat is received any sooner by the server, the instance lease expires and will be evicted. Default: 90s.
+    # Set heartbeat cadence, i.e. how often a client sends a heartbeat.
+    # Use small values only for local development. In production use default of 30 seconds.
+    #lease-renewal-interval-in-seconds:         2   # Default: 30
+    
+    # Set the lease validity to 5 seconds. If no heartbeat is received any sooner by the server, the instance lease expires and will be evicted.
+    # This setting has an impact on how many heartbeats can go missing before the instance is evicted.
+    # With a lease expiration duration of 90s and a heartbeat that is sent every 30s, 3 (90 / 30) heartbeats can be missing, before the instance is
+    # removed from the registry.
+    #lease-expiration-duration-in-seconds:      5   # Default: 90
 
     ## This information will be part of the InstanceInfo returned by DiscoveryClient / EurekaClient.
     ## Unfortunately, these have to be specified explicitly, since Eureka creates these URLs wrongly
