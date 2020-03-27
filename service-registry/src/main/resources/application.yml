@@ -19,7 +19,7 @@ eureka:
     # Note: the lease validity / expiration is configured in the Eureka _client_ instances (see eureka.instance.lease-expiration-duration-in-seconds).
     # See: https://github.com/Netflix/eureka/wiki/Server-Self-Preservation-Mode
     # See: https://www.baeldung.com/eureka-self-preservation-renewal
-    enable-self-preservation: false
+    enable-self-preservation: false # Default: true
   
     # Make sure this is is set to the same value as the lease renewal interval in Eureka _client_ instances (or slightly higher)
     # This value is relevant for Eureka's calculation of the 'current renewal threshold'.
@@ -28,11 +28,11 @@ eureka:
     # - for one registered client: 60 / 3 * 0.5 * 1 = 10.
     # - for two registered clients: 60 / 3 * 0,5 * 2 = 20.
     # As soon as two clients are connected: 
-    expected-client-renewal-interval-seconds:  3
+    expected-client-renewal-interval-seconds:  3    # Default: 30
 
     # The interval in which the instance eviction task scans for instances with expired leases.
     # Given in milliseconds.
-    eviction-interval-timer-in-ms:             2000
+    eviction-interval-timer-in-ms:             2000 # Default 60000
 
     # The cadence of calculating / adapting a new renewal threshold, i.e. how frequently a new threshold is calculated.
     # The renewal threshold is used to distinguish, when Eureka should go into self-preservation mode 
